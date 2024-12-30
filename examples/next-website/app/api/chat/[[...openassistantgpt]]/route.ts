@@ -1,3 +1,5 @@
+export const maxDuration = 60; // This function can run for a maximum of 60 seconds
+
 import { OpenAssistantGPT } from '@openassistantgpt/assistant';
 
 // In OpenAssistantGPT handler you must enter your base path.
