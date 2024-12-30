@@ -5,8 +5,8 @@ import { Inter } from 'next/font/google';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title: 'OpenAssistantGPT SDK Example',
-  description: 'Example of using OpenAssistantGPT SDK in a Next.js website',
+  title: 'Asystent w zamówieniach publicznych - zespół ProcureGenius',
+  description: 'Badanie zastosowania agentów AI we wsparciu podejmowania decyzji w środowiskach wysoce sformalizowanych.',
 };
 
 export default function RootLayout({
