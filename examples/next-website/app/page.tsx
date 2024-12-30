@@ -10,13 +10,13 @@ export default function ChatPage() {
 
   const chatbot: ChatbotConfig = {
     id: '12345',
-    name: 'OpenAssistantGPT',
+    name: 'Asystent ProcureGenius',
 
-    chatTitle: 'Chat with OpenAssistantGPT',
+    chatTitle: 'Asystent AI dla zamówień publicznych',
     welcomeMessage:
-      "Welcome to OpenAssistantGPT! 🚀 I'm your AI assistant, crafted using this platform. How may I assist you today?",
-    chatMessagePlaceHolder: 'Ask us any question...',
-
+      "Witaj! 🚀 Jestem asystentem o nazwie ProcureGenius. Napisz, co chcesz zamówić lub sprawdzić w dokumentacji zakupów realizowanych od 2021 r. Zakończ swój opis poleceniem - np. jakie znam postępowania zakupowe w podobnej tematyce? albo na jakie pytania warto znać odpowiedź przygotowując się do takiego zamówienia? Możesz też poprosić o: analizę usług/produktów zamawianych razem, napisanie spisu treści, zaproponowanie treści wybranego rozdziału, zaproponowanie kar, zaproponowanie kryteriów etc. Najwięcej magii ukaże się z długiej dyskusji - zacznij od prostych pytań o fakty, by następnie prosić o wygenerowanie spisu treści i treści dla każdego z rozdziałów.",
+    chatMessagePlaceHolder: 'Chcę zamówić ...',
+    
     rightToLeftLanguage: false,
 
     bubbleColor: 'linear-gradient(to top left, #003366, #336699)',
@@ -70,10 +70,10 @@ export default function ChatPage() {
             className="w-full bg-white"
             variant="outline"
             onClick={() =>
-              setDefaultMessage('How many chatbot can I created on free plan?')
+              setDefaultMessage('Chcę zamówić usługę leasingu samochodów służbowych. Na jakie pytania warto znać odpowiedź przygotowując się do takiego zamówienia?')
             }
           >
-            How many chatbot can I created on free plan?
+            Chcę zamówić usługę leasingu samochodów służbowych. Na jakie...
           </Button>
         ),
         count == 0 && (
@@ -81,9 +81,9 @@ export default function ChatPage() {
             key="2"
             className="w-full bg-white"
             variant="outline"
-            onClick={() => setDefaultMessage('How to create a chatbot?')}
+            onClick={() => setDefaultMessage('Chcę zamówić usługę infolinii / helpdesku. Jakie znasz postępowania zakupowe w podobnej tematyce? Podaj nazwę zamawiającego, tytuł postępowania, datę oraz numer BZP.')}
           >
-            How to create a chatbot?
+            Chcę zamówić usługę infolinii / helpdesku. Jakie znasz...
           </Button>
         ),
         count == 0 && (
@@ -91,23 +91,11 @@ export default function ChatPage() {
             key="3"
             className="w-full bg-white"
             variant="outline"
-            onClick={() =>
-              setDefaultMessage('How to integrate chatbot in website?')
-            }
+            onClick={() => setDefaultMessage('chcę zamówić usługę zapewnienia czystości / sprzątania przestrzeni biurowych. Jakie kary umowne warto zastosować przy takim zamówieniu?')}
           >
-            How to integrate chatbot in website?
+            chcę zamówić usługę sprzątania przestrzeni biurowych. Jakie kary...
           </Button>
-        ),
-        count == 0 && (
-          <Button
-            key="4"
-            className="w-full bg-white"
-            variant="outline"
-            onClick={() => setDefaultMessage('What is a SDK?')}
-          >
-            What is a SDK?
-          </Button>
-        ),
+        )
       ]}
     />
   );
